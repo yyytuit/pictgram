@@ -8,6 +8,8 @@ class User < ApplicationRecord
 
   # リレーション
   has_many :topics
+  has_many :favorites
+  has_many :favorite_topics, through: :favorites, source: 'topic'
 
   # バリデーション
   validates :name, presence: true, length: { maximum: 15 }

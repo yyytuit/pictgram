@@ -1,0 +1,11 @@
+<%= form_for comment do |f| %>
+  <%= f.hidden_field :user_id %>
+  <%= f.hidden_field :topic_id %>
+  <div class="form-group">
+    <p class="topic-text">
+      <%= f.label :detail %>
+    </p>
+    <%= f.text_area :detail %>
+  </div>
+  <%= f.submit '投稿', class: 'btn btn-black btn-block' %>
+<% end %>

@@ -12,11 +12,27 @@
               <%= link_to favorites_path(topic_id: topic.id), method: :post do %>
                 <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon' %>
               <% end %>
+            <% else %>
+              <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
+                <%= image_tag 'icons/heart-dele.png', class: 'topic-index-icon' %>
+              <% end %>
             <% end %>
-            <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <%= Favorite.where(topic_id: topic.id).count  %>
+            <%= link_to new_comment_path(topic_id: topic.id) do %>
+              <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
+            <% end %>
             <p class="topic-text">
               <%= topic.description %>
             </p>
+            <% Comment.where(topic_id: topic.id).each do |c| %>
+              <p class="topic-text">
+                <%= c.detail %>
+                <% if topic.comments_users.include?(current_user) %>
+                  <%= link_to '編集', edit_comment_path(c) %>
+                  <%= link_to '削除', c, method: :delete, data: { confirm: '削除してもいいですか?' } %>
+                <% end %>
+              </p>
+            <% end %>
           </div>
         </div>
       </div>

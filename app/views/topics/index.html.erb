@@ -14,10 +14,10 @@
               <% end %>
             <% else %>
               <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
-                <%= image_tag 'icons/heart-dele.png', class: 'topic-index-icon' %>
+                <%= image_tag 'icons/heart.png', class: 'topic-index-icon-red' %>
               <% end %>
             <% end %>
-            <%= Favorite.where(topic_id: topic.id).count  %>
+            <%= topic.favorite_users.count %>
             <%= link_to new_comment_path(topic_id: topic.id) do %>
               <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>

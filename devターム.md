@@ -75,3 +75,5 @@ https://docs.google.com/spreadsheets/d/1zOgkv_wNUegN_jk4K4lVX60pRlHFUEj3iQxsjCM_
 ## ER 図
 
 https://www.draw.io/#G1nQ6okDDb-1LrKkVGCuMLYxYcZfGXOnI9
+
+![スクリーンショット 2020-08-25 22.29.59.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/547448/89fabaf2-a2aa-29b6-6072-769f83a2e4b9.png)

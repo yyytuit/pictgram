@@ -29,6 +29,7 @@ class SessionsController < ApplicationController
   end
 
   def email_params
+    puts '####params#####'
     params.require(:session).permit(:email)
   end
 

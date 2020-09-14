@@ -75,7 +75,7 @@
 
 https://docs.google.com/spreadsheets/d/1zOgkv_wNUegN_jk4K4lVX60pRlHFUEj3iQxsjCM_1sw/edit#gid=2046640859
 
-<img width="943" alt="スクリーンショット 2020-09-14 20 54 23" src="https://user-images.githubusercontent.com/42993429/93082966-c3fb2980-f6cc-11ea-80ba-3d831c6e9a64.png">
+<img width="668" alt="スクリーンショット 2020-09-14 20 54 08" src="https://user-images.githubusercontent.com/42993429/93083045-eb51f680-f6cc-11ea-9958-1bbc118326d0.png">
 
 
 ## ER 図
